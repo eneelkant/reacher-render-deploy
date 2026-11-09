@@ -1,0 +1,28 @@
+# Git / VCS
+.git
+.gitignore
+.gitattributes
+
+# Docs and editor noise (not needed at image build time)
+README.md
+*.md
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Env / secrets — never send local credentials into the build context
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# CI / local tooling
+.github
+.dockerignore
+Dockerfile
